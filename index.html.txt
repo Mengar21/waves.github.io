@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="Indexcss.css" type="text/css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<script>
+		// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("topnav");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+	</script>
+	
+	<div class="Navigation">
+<!-- Top navigation bar -->
+<div class="topnav">
+	<div style="float:left;">
+		<!-- Img -->
+	<b><img style="width=60px;height:50px;" src="WTFLOGO.jpg"></b>
+	</div>
+	<!-- links -->
+	  <a href="">HOME</a>
+	 <a href="Tendents.html">TENDENTS</a>
+	 <a href="#home">WHY TAEKWONDO?</a>
+	 <a href="#home">BELTS</a>
+	<!-- -->
+	  <div class="pattern">
+    <button class="pattbtn">PATTERNS
+      <i class="fa fa-caret-down"></i> 
+    </button>
+    <div class="pattern-content">
+      <a href="WTF.html">WTF</a>
+      <a href="ITF.html">ITF</a>
+      <a href="BBELT.html">BLACKBELT</a>
+    </div>
+</div>
+	<!-- Search bar -->
+	<input type="text" placeholder="Search">
+  </div>
+	<!-- End of top nav -->
+		</head>
+	<body background="TaekwondoBackground.jpg">
+	
+</body>
+</html>
+<iframe width="640" height="480" src="https://www.youtube.com/embed/rRVaGCP3QJk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

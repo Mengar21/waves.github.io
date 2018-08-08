@@ -1,0 +1,204 @@
+@charset "utf-8";
+/* CSS Document */
+img{
+	max-width:1200px;
+	max-height:600px;
+}
+	/*.Navigation {
+    background-color: #212121;
+    text-aign:Left;
+	color:white;
+	font-size:20px;
+}*/
+
+/* Add a black background color to the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color:black;
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	font-size:20px;
+	color:white;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+    background-color: #2196F3;
+    color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+    float: left;
+    padding: 6px;
+    border: none;
+    margin-top: 10px;
+    margin-right: 16px;
+    font-size: 17px;
+	color:white;
+	background-color:black;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .main & .mainright{
+  padding-top: 60px;
+}
+.main{
+	float:left;
+	width:50%;
+	height:400px;
+	background-color: #FFFFFF;
+	
+}
+.mainright{
+	width:50%;
+	float:left;
+	height:400px;
+	background-color:black;
+	font-family: "Lobster", serif;
+	color:white;
+	overflow:hidden;
+}
+.lowermain{
+	width:100%;
+	font-size:150%;
+	background-color:black;
+	color:white;
+	font-family: "Lobster", serif;
+	overflow:hidden;
+	
+}
+.gallery {
+    border: 4px solid #000000;
+	width:33%;
+	float:left;
+	height:350px;
+	
+}
+.gallery img {
+    width:100%;
+    height:100%;
+}
+.gallery:hover {
+    border: 4px solid #C90003;
+}
+
+/* The dropdown for patterns */
+.pattern {
+    float: left;
+	overflow: hidden;
+    background-color:black;
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	font-size:20px;
+	color:white;
+}
+
+.pattern .pattbtn {
+    font-size: 20px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+	font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+.pattern-content a {
+	float:none;
+    display: block;
+    color:white;
+	position:relative;
+    text-align:left;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 20px;
+	
+	
+}
+/* Add a grey background color to dropdown links on hover */
+.pattern-content a:hover {
+  background-color: #ddd;
+	color:black;
+}
+
+/* Show the dropdown menu on hover */
+.pattern:hover .pattern-content {
+  display: block;
+}
+.pattern-content {
+  display: none;
+  position: absolute;
+  background-color:black;
+  min-width:152px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  z-index: 1;
+}
+.topnav a:hover, .pattern:hover .pattbtn {
+    background-color:#ddd;
+	color:black;
+}
+/*
+.pattern{position: relative;
+}
+.pattern-content{ display:none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;}
+.pattern:hover .pattern-content{
+    display: block;
+}
+*/
+.whytaek{
+	width:40%;
+	float:left;
+	font-family: "Lobster", serif;
+	color:black;
+	overflow:hidden;
+	padding-left:20px;
+	padding-right:30px;
+}
+.patternelement{
+	width:100%;
+	height:90px;
+	padding-top:20px;
+	padding-bottom:10px;
+	font-family:"Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	text-align:center;
+	display:block;
+	
+}
+
+.mainright a:hover{background-color:black; color:red;}
+.mainright a{text-decoration:none;}
+.footer{
+	text-align:center;
+	float:left;
+	height:90px;
+	width:100%;
+	background-color:black;	
+	color:black;
+}
