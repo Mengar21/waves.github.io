@@ -4,14 +4,7 @@ img{
 	max-width:1200px;
 	max-height:600px;
 }
-	/*.Navigation {
-    background-color: #212121;
-    text-aign:Left;
-	color:white;
-	font-size:20px;
-}*/
-
-/* Add a black background color to the top navigation bar */
+	
 .topnav {
     overflow: hidden;
     background-color:black;
@@ -104,8 +97,8 @@ img{
     border: 4px solid #C90003;
 }
 
-/* The dropdown for patterns */
-.pattern {
+/* The dropdown for learning */
+.learn {
     float: left;
 	overflow: hidden;
     background-color:black;
@@ -114,7 +107,7 @@ img{
 	color:white;
 }
 
-.pattern .pattbtn {
+.learn .learnbtn {
     font-size: 20px;    
     border: none;
     outline: none;
@@ -124,7 +117,7 @@ img{
 	font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
 }
-.pattern-content a {
+.learn-content a {
 	float:none;
     display: block;
     color:white;
@@ -137,16 +130,16 @@ img{
 	
 }
 /* Add a grey background color to dropdown links on hover */
-.pattern-content a:hover {
+.learn-content a:hover {
   background-color: #ddd;
 	color:black;
 }
 
 /* Show the dropdown menu on hover */
-.pattern:hover .pattern-content {
+.learn:hover .learn-content {
   display: block;
 }
-.pattern-content {
+.learn-content {
   display: none;
   position: absolute;
   background-color:black;
@@ -154,43 +147,12 @@ img{
   /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
   z-index: 1;
 }
-.topnav a:hover, .pattern:hover .pattbtn {
+.topnav a:hover, .learn:hover .learnbtn {
     background-color:#ddd;
 	color:black;
 }
-/*
-.pattern{position: relative;
-}
-.pattern-content{ display:none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 100%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;}
-.pattern:hover .pattern-content{
-    display: block;
-}
-*/
-.whytaek{
-	width:40%;
-	float:left;
-	font-family: "Lobster", serif;
-	color:black;
-	overflow:hidden;
-	padding-left:20px;
-	padding-right:30px;
-}
-.patternelement{
-	width:100%;
-	height:90px;
-	padding-top:20px;
-	padding-bottom:10px;
-	font-family:"Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-	text-align:center;
-	display:block;
-	
-}
+
+
 
 .mainright a:hover{background-color:black; color:red;}
 .mainright a{text-decoration:none;}
