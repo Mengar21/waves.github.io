@@ -1,1 +1,236 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="Indexcss.css" type="text/css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+	
 
+<body onload="nou();">
+
+<!-- Universal TOPNAV -->
+<div class="universal-topnav">
+	<div style="float:left;"><img href="Logo.jpg"style="width=60px;height:33px;" src="Logo.jpg"></div><a href="index.htm">HOME</a>
+	<a href="lorem">HELP?</a><input type="text" placeholder="Search...">
+</div>
+<!--<div style="width:100%;height:2px;display:block;position:relative;background-color:black;float:left;"></div>
+<!-- END Universal TOPNAV -->
+<!-- SLIDES   #################################-->
+<div class="progress">
+	<span style="padding-left:5%;padding-right:1%;"><button onclick="slide_1()"  style="background:none;border:none;" id="A">SLIDE-1</button></span>
+	<a>>></a>
+	<span style="padding-left:1%;padding-right:1%;"><button onclick="slide_2()"  style="background:none;border:none;" id="B">SLIDE-2</button></span>
+	<a>>></a>
+	<span style="padding-left:1%;padding-right:1%;"><button onclick="slide_3()"  style="background:none;border:none;" id="C">SLIDE-3</button></span>
+	<a>>></a>
+	<span style="padding-left:1%;padding-right:1%;"><button onclick="slide_4()"  style="background:none;border:none;" id="D">SLIDE-4</button></span>
+</div>
+	<!-- SLIDE 1 -->
+<div id="LSlide1">
+<!-- NEXT SLIDE BUTTON -->
+	<div class="rightnext" onclick="F1()">
+		<img src="arrowleft.jpg" style="padding-left:10%;width:50%;height:100%;" alt="arrowleft.jpg">
+		<img src="nextright.jpg" style="float:right;height:100%;width:50%;">
+	</div>
+	<!-- Main -->
+	<div class="LSlide_Frm_Lft"> 
+		<div style="max-width:40%;float:left;max-height:100%;">
+			<h1 style="font-size:300%;padding-left:40px;padding-top:20px;font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, 'sans-serif';color:#4484CE;">Intoduction</h1>
+			<p style="padding-left:40px;padding-bottom:50px;">Waves are caused by the wind blowing over<br> the surface of the ocean. In many areas of <br>the world, the wind blows with enough <br>consistency and force to provide continuous <br> waves along the shoreline.<strong> See Figure 1</strong><br><br> Waves are a powerful source of energy.<br>The problem is that it's not easy<br> to harness this energy and convert<br>  it into electricity in large amounts.<br> Thus, wave power stations are rare.<br><br>Wave power varies considerably in<br> different parts of the world.<br> Areas of the world with abundant<br> wave power resource include the western<br> coasts of Scotland, northern Canada,<br> southern Africa, Australia, and the<br> northwestern coast of the United States,<br> particularly Alaska.</p>
+		</div>
+		<div style="max-width:60%;float:right;max-height:100%;bottom:0">
+			<h1 style="font-size:300%;padding-left:40px;padding-top:20px;font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, 'sans-serif';color:#4484CE;">Infographic</h1>
+			<img src="infografic.jpg" style="width:90%;height:60%">
+		</div>
+	</div>
+	<!-- no u -->
+	<div class="LSlide_Frm_Rgt">
+		<div style="text-align:center;background-color:#F19F4D;border-radius:15px;height:30%;width:80%;margin-left:10%;;margin-top:20px;">
+			<p style="font-size:120%;">FIGURE 1</p>
+			<img src="how_waves_are_made.gif" style=""width="90%"height="70%">
+		</div>
+	</div>
+</div>
+	
+	<!-- SLIDE 2  -->
+<div id="LSlide2">
+	<!-- Buttons -->
+	<div class="leftnext" onclick="RevF1()">
+		<img src="arrowright.jpg" style="float:right;padding-right:10%;width:50%;height:100%;">
+		<img src="PREV.jpg" style="float:left;height:100%;width:50%;"></div>
+		<div class="rightnext" onclick="F2()">
+			<img src="arrowleft.jpg" style="padding-left:10%;width:50%;height:100%;">
+			<img src="nextright.jpg" style="float:right;height:100%;width:50%;">
+		</div>
+	
+		<div class="LSlide_Frm_Lft">
+			<div style="max-width:40%;float:left;max-height:100%;">
+				<h1 style="font-size:300%;padding-left:40px;padding-top:20px;font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, 'sans-serif';color:#4484CE;float:left;position:relative;">Watch!</h1>
+				<video controls height="auto"width="100%" style="padding-left:40px;float:left;"src="WaveEnergyVid1.mp4"></video>
+			</div>
+					
+			<div style="max-width:60%;float:right;max-height:100%;">
+				<h1 style="font-size:300%;padding-left:40px;padding-top:20px;font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, 'sans-serif';color:#4484CE;">What is Wave Energy?</h1>					<p style="padding-right:10px">Some of the kinetic (motional) energy in the wind is transformed into waves<br> once the wind hits the ocean surface. Wind energy ultimately forms due to <br>solar energy and its influence on high and low pressure. This is the reason<br> why wave as well as wind power are considered renewable energy sources.<br><br>The density of the energy that is transported under the waves under the<br> ocean surface is about five times higher compared to the wind energy 20<br> meter (about 65 feet) above.  In other words, the amount of energy in a <br>single wave is very high.<br><br></p>
+			</div>
+			
+			<div style="width:70%;postion:relative;display:bottom;height:60%;float:left;">
+				<h1 style="font-size:300%;padding-left:40px;padding-top:20px;font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, 'sans-serif';color:#4484CE;">How It Works?</h1>
+				<p style="padding-left:40px;padding-bottom:50px;">In 2001, more than 1000 different methods<br>of utilization of wave energy had been<br>patented by many different wave energy <br>companies, most of which never even made<br> it past the first few stages. Only a few <br>of these projects have been shown to work<br> in reality. The following are the three main <br>methods that look most promising</p>
+			</div>
+		</div>
+				
+		<div class="LSlide_Frm_Rgt">
+			<div style="text-align:center;background-color:#F19F4D;border-radius:15px;height:30%;width:80%;margin-left:10%;margin-top:20px;">
+			<p style="font-size:120%;">FIGURE 1</p><img src="kinetic.gif" style=""width="90%"height="70%">
+			</div>
+			<div style="text-align:center;background-color:#F19F4D;border-radius:15px;height:30%;width:80%;margin-left:10%;margin-top:20px;">
+			<p style="font-size:120%;">FIGURE 2</p><img src="aboutwaves.jpg" style=""width="90%"height="70%">
+			</div>
+		</div>
+	</div>
+	<!-- SLIDE 3  -->
+<div id="LSlide3">
+<!--  BUTTONS -->
+	<div class="leftnext" onclick="RevF3()">
+		<img src="arrowright.jpg" style="float:right;padding-right:10%;width:50%;height:100%;">
+		<img src="PREV.jpg" style="float:left;height:100%;width:50%;"></div>
+		<div class="rightnext" onclick="F3()">
+			<img src="arrowleft.jpg" style="padding-left:10%;width:50%;height:100%;">
+			<img src="nextright.jpg" style="float:right;height:100%;width:50%;">
+		</div>
+	<!-- MAIN -->
+	<div class="LSlide_Frm_Lft">YO </div>
+	<div class="LSlide_Frm_Rgt">Hi</div>
+</div>
+	<!-- SLIDE 4  -->
+<div id="LSlide4">
+			<div class="rightnext" onclick="F1()"><img src="arrowleft.jpg" style="padding-left:10%;width:50%;height:100%;"></div>
+			<div class="LSlide_Frm_Lft"> Hellu </div>
+			<div class="LSlide_Frm_Rgt">Hi</div>
+		</div>
+	
+
+<script> 
+	window.onload = function{
+		nou();
+	}
+	function nou(){
+		alert("kil me")
+	}
+	
+	/*function myFunction(){
+		 alert("no u")
+			if(document.getElementById("LSlide1").style.display=="flex") {
+				document.getElementById("A").style.color="#F19F4D";
+				alert("Thegays")
+			}
+			else (document.getElementById("LSlide1").style.display=="none") {
+				document.getElementByClass("A").style.color="black";
+				alert("thegays")
+			}
+		 else {
+			alert("thegays")
+		 }
+			 
+		}
+			*/
+		function F1(){ //First Slide change
+			document.getElementById("LSlide1").style.display="none"; //Hide Slide 1
+			document.getElementById("LSlide2").style.display="flex"; //Show Slide 2
+		}
+		function F2(){ //Seccond slide change
+			document.getElementById("LSlide2").style.display="none"; //Hide Slide 2
+			document.getElementById("LSlide3").style.display="flex"; //Show Slide 3
+		}
+		function F3(){ //Third slide change
+			document.getElementById("LSlide3").style.display="none"; //Hide Slide 3
+			document.getElementById("LSlide4").style.display="flex"; //Show Slide 4
+		}
+		function F4(){ //Fourth slide change
+			document.getElementById("LSlide4").style.display="none"; //Hide Slide 4
+			document.getElementById("LSlide5").style.display="flex"; //Show Slide 5
+		}
+		function F5(){ //Fith slide change
+			document.getElementById("LSlide5").style.display="none"; //Hide Slide 5
+			document.getElementById("LSlide6").style.display="flex"; //Show Slide 6
+		}
+		function F6(){ //Sixth slide change
+			document.getElementById("LSlide6").style.display="none"; //Hide Slide 6
+			document.getElementById("LSlide7").style.display="flex"; //Show Slide 7
+		}
+		//ffffffffffffffffffffffffffffffffffffff
+		function slide_1(){
+			document.getElementById("LSlide1").style.display="flex"; //Hide Slide 1
+			document.getElementById("LSlide2").style.display="none"; //Show Slide 2
+			document.getElementById("LSlide3").style.display="none"; //Show Slide 2
+			document.getElementById("LSlide4").style.display="none"; //Show Slide 2
+			document.getElementById("LSlide5").style.display="none"; //Show Slide 2
+			document.getElementById("LSlide6").style.display="none"; //Show Slide 2
+		}
+		function slide_2(){
+			document.getElementById("LSlide1").style.display="none"; //Hide Slide 1
+			document.getElementById("LSlide2").style.display="flex"; //Show Slide 2
+			document.getElementById("LSlide3").style.display="none"; //Show Slide 2
+			document.getElementById("LSlide4").style.display="none"; //Show Slide 2
+			document.getElementById("LSlide5").style.display="none"; //Show Slide 2
+			document.getElementById("LSlide6").style.display="none"; //Show Slide 2
+		}
+		function slide_3(){
+			document.getElementById("LSlide1").style.display="none"; //Hide Slide 1
+			document.getElementById("LSlide2").style.display="none"; //Show Slide 2
+			document.getElementById("LSlide3").style.display="flex"; //Show Slide 2
+			document.getElementById("LSlide4").style.display="none"; //Show Slide 2
+			document.getElementById("LSlide5").style.display="none"; //Show Slide 2
+			document.getElementById("LSlide6").style.display="none"; //Show Slide 2
+		}
+		function slide_4(){
+			document.getElementById("LSlide1").style.display="flex"; //Hide Slide 1
+			document.getElementById("LSlide2").style.display="none"; //Show Slide 2
+			document.getElementById("LSlide3").style.display="none"; //Show Slide 2
+			document.getElementById("LSlide4").style.display="none"; //Show Slide 2
+			document.getElementById("LSlide5").style.display="none"; //Show Slide 2
+			document.getElementById("LSlide6").style.display="none"; //Show Slide 2
+		}
+		//ffffffffffffffffffffffffffffffffffffff
+	
+		function RevF1(){ //First Slide change
+			document.getElementById("LSlide1").style.display="flex"; //Hide Slide 1
+			document.getElementById("LSlide2").style.display="none"; //Show Slide 2
+		}
+		function RevF2(){ //Seccond slide change
+			document.getElementById("LSlide2").style.display="flex";//Hide Slide 2
+			document.getElementById("LSlide3").style.display="none"; //Show Slide 3
+		}
+		function RevF3(){ //Third slide change
+			document.getElementById("LSlide3").style.display="flex"; //Hide Slide 3
+			document.getElementById("LSlide4").style.display="none"; //Show Slide 4
+		}
+		function RevF4(){ //Fourth slide change
+			document.getElementById("LSlide4").style.display="flex"; //Hide Slide 4
+			document.getElementById("LSlide5").style.display="none"; //Show Slide 5
+		}
+		function RevF5(){ //Fith slide change
+			document.getElementById("LSlide5").style.display="flex"; //Hide Slide 5
+			document.getElementById("LSlide6").style.display="none"; //Show Slide 6
+		}
+		function RevF6(){ //Sixth slide change
+			document.getElementById("LSlide6").style.display="flex"; //Hide Slide 6
+			document.getElementById("LSlide7").style.display="none"; //Show Slide 7
+		}
+		
+		/*function myFunction(){
+			while (document.getElementById("A").style.color = "blue"){
+				alert('thegays')
+			}
+			
+				  
+		}
+		*/
+	 
+		
+	</script>
+		
+</body>
+</html>

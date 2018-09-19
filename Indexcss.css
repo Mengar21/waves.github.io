@@ -1,12 +1,38 @@
 @charset "utf-8";
 /* CSS Document */
-/*COLOR SCHEME 
+/*COLOUR SCHEME 
 Blue= #4484CE
 Aluminum=#D9D9D9
 Yellow= #F9CF00
 Tangerine =#F19F4D
 */
-
+.progress{
+	height:40px;
+	position:relative;
+	width:96%;
+	margin-left:2%;
+	margin-right:2%;
+	background-color:#4484CE;
+	border-radius:10px;
+	float:left;
+	margin-top:0.5%;
+	font-size:165%;
+}
+#A{
+	color="black";
+}
+#A:hover{
+	color:#F19F4D;
+}
+#B:hover{
+	color:#F19F4D;
+}
+#C:hover{
+	color:#F19F4D;
+}
+#D:hover{
+	color:#F19F4D;
+}
 
 .universal-topnav{
 	width:100%;
@@ -71,9 +97,91 @@ Tangerine =#F19F4D
 	/*color: #A6A6A6; */
 	font-size:300%;
 	font-family: "Lobster", serif;
-	
+}
+/* START OF SLIDES ###################################################################################################### */
+.LSlide_Frm_Lft{
+	float:left;position:relative;width:75%;flex:4;margin-top:0.5%;margin-left:2%;background-color:#D9D9D9;border-radius:25px;
+}
+.LSlide_Frm_Rgt{
+	float:left;position:relative;width:19%;margin-top:0.5%;margin-left:2%;margin-right:2%;background-color:#D9D9D9;border-radius:25px;font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, 'sans-serif';
+}
+
+#LSlide1{
+	display:flex;
+	position:relative;
+	width:100%;
 	
 }
+#LSlide2{
+	display:none;
+	position:relative;
+	width:100%;
+	
+}
+#LSlide3{
+	display:none;
+	position:relative;
+	width:100%;
+}
+#LSlide4{
+	display:none;
+	position:relative;
+	width:100%;
+}
+#LSlide5{
+	display:none;
+	position:relative;
+	width:100%;
+}
+#LSlide6{
+	display:none;
+	position:relative;
+	width:100%;
+	height:100%;
+}
+#LSlide7{
+	display:none;
+	position:relative;
+	width:100%;
+	height:100%;
+}
+#LSlide8{
+	display:none;
+	position:relative;
+	width:100%;
+	height:100%;
+}
+.rightnext{
+	width:150px;
+	height:150px;
+	right:-80px;
+	top:300px;
+	position:absolute;
+	background-color:#F19F4D;
+	z-index:1;
+	border-radius:10px;
+}
+.rightnext:hover {
+	backgound-color:blue;
+	right:-5px;
+	
+}
+.leftnext{
+	width:150px;
+	height:150px;
+	left:-80px;
+	top:300px;
+	position:absolute;
+	background-color:#F19F4D;
+	z-index:1;
+	border-radius:10px;
+}
+.leftnext:hover {
+	backgound-color:blue;
+	left:-5px;
+	
+}
+/* END OF SLIDES ###################################################################################################### */
 #rcorners2 {
     border-radius: 25px;
     background-color:#F19F4D;
@@ -173,6 +281,11 @@ Tangerine =#F19F4D
 	
 }
 /* END OF TOPNAV #################################################################################################### */
+.body_size{
+	width:100%;
+	height:auto;
+	
+}
 .main{
 	float:left;
 	width:50%;
