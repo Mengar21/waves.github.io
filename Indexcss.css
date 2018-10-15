@@ -6,6 +6,20 @@ Aluminum=#D9D9D9
 Yellow= #F9CF00
 Tangerine =#F19F4D
 */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
 .progress{
 	height:40px;
 	position:relative;
