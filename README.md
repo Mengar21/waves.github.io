@@ -2,6 +2,10 @@
 TADGH MY PHONE NUMBER IS 0481 869 100
 0481 869 100 0481 869 100 0481 869 100 0481 869 100  0481 869 100 0481 869 100 0481 869 100
 
+boi my phone is lost my guy
+do not worry you are covered
+sorry i took a while google api is being a little bitch
+
 https://mengar21.github.io/waves.github.io
 gmwaves.ga
 
