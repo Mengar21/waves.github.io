@@ -1,5 +1,7 @@
 # waves.github.io
-LINK
+TADGH MY PHONE NUMBER IS 0481 869 100
+0481 869 100 0481 869 100 0481 869 100 0481 869 100  0481 869 100 0481 869 100 0481 869 100
+
 https://mengar21.github.io/waves.github.io
 gmwaves.ga
 
