@@ -1,0 +1,7 @@
+Project ID: waves-219512
+
+Sheet ID: 16ASg9rHlQt_gCtxXDz2rM0U0HnfmC9bOEZ3L6_rD1pA
+	
+Client ID: 904533220354-qet6pgutq7fc4cui9ad181iagpb6fhj9.apps.googleusercontent.com
+Client secret: V-fQMO32-0zSE--UxQUn_LrV
+
