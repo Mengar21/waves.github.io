@@ -8,6 +8,42 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script></script>
+<style>
+/*sorry rohan ill chuck it in the css file later*/
+.dropbtn {
+    background-color: #FFFFFF;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 11;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #dddddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #cccccc;}
+</style>
 </head>
 	
 	
@@ -31,7 +67,18 @@
 			<div class="spacinglogin" style="float:center;"></div>
 			<div class="side-spacing" style="float:right; width:35%;"></div>
 			<!--  ############## LOGIN ################# -->
-			<div class=login><h1 style="text-align: center">Login<br><br></h1><p style="padding-left:20%"><strong>Please enter your full name. <br>EG: Bob Williams</strong></p><p style="padding-left:20%">Name: <input type="text" placeholder=""></p><p style="padding-left:20%"></p></div>
+			<div class=login>
+				<h1 style="text-align: center">Login<br></h1>
+				<p style="padding-left:20%"><strong>Please select your name from the roll:</strong></p>
+				<div class="dropdown">
+					<button class="dropbtn">Dropdown</button>
+					<div class="dropdown-content">
+						<a onclick="alert('You clicked me !')">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</div>
+			</div>
 			<!-- END LOGIN-->
 			<div class="bottom-spacing" style="width:30%;height:25%;"></div>
 			<!-- END SPACING -->
