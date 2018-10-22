@@ -1,4 +1,9 @@
-<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+//<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+
+var js = document.createElement("script");
+js.type = "text/javascript";
+js.src = "https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js";
+document.body.appendChild(js);
 
 function getPoints(){
 	//spreadsheet
