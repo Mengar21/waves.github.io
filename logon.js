@@ -3,7 +3,7 @@
 var js = document.createElement("script");
 js.type = "text/javascript";
 js.src = "https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js";
-document.body.appendChild(js);
+//document.appendChild(js); or document.body.appendChild(js);
 
 function getPoints(){
 	//spreadsheet
@@ -30,4 +30,9 @@ function establish(name){
 
 function kill(){
 	//cookies.remove if need be
+}
+
+function display(){
+	var header = "Hello " + getName() + "\t\t  Points: " + getPoints();
+	document.body.GetElementById("display").innerHTML = header;
 }

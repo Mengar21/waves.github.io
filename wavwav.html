@@ -2,7 +2,8 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>wavwav</title>
+<title>Quiz Game</title>
+<link rel="stylesheet" href="Indexcss.css" type="text/css">
 <style>
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
 
@@ -69,7 +70,16 @@ button:hover{
 </style>
 </head>
 <body>
-<h1>Wave Quiz                  Hello  ...   Points:...</h1>
+<div class="universal-topnav">
+	<div style="float:left;">
+	<img href="Logo.jpg" style="width=60px;height:33px;" src="Logo.jpg"></div>
+	<a href="index.htm">HOME</a>
+	<a href="help.html">HELP?</a>
+	<a href="References.html">REFERENCES</a>
+	<!--<input type="text" placeholder="Search...">-->
+	<p onload="display();" style="float:right;" id="display">Hello ... Points: </p>
+</div>
+<h1>Wave Quiz</h1>
 <div class="quiz-container">
   <div id="quiz"></div>
 </div>
