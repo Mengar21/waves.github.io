@@ -91,8 +91,11 @@ p {
 	<div class="word"><p>Oscillatory</p></div>
 	<div class="word"><p>reflecting coast</p></div>
 	<div class="word"><p>microseisms</p></div>
+	<div class="word"><p>horizontally</p></div>
 	<div class="word" style="/*font-size:10px;*/"><p>wave energy flux</p></div>
 </div>
+<button id="next" onclick="window.location.href='Finish.html';" style="margin:40% 50% 10% 30%; width:40%; background-color:'ffffff'; border:none; display:none;">Finish</button>
+			
 
 <script>
 
@@ -101,10 +104,11 @@ for(var i in words){
    dragElement(words[i]);
 }
 //dragElement(document.getElementById("word"));
-
+var o = 0;
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
     elmnt.onmousedown = dragMouseDown;
+
 
   function dragMouseDown(e) {
     elmnt.style.position = "absolute";
@@ -139,6 +143,10 @@ function dragElement(elmnt) {
 		space.style.borderColor = "blue";
 		space.innerHTML = elmnt.innerHTML;
 		elmnt.parentNode.removeChild(elmnt);
+		o = o + 1;
+		if(o == 15){
+			document.getElementById('next').style.display = "block";
+		}
 	}
   }
 }
