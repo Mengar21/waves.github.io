@@ -26,7 +26,7 @@
 }
 
 .dropdown-content {
-    display: none
+    display: none;
 	margin-left: 90%
     position: absolute;
     background-color: #f1f1f1;
@@ -63,8 +63,14 @@
 			
 		<!-- Universal TOPNAV -->
 		<div class="universal-topnav">
-	<div style="float:left;"><img href="Logo.jpg"style="width=60px;height:33px;" src="Logo.jpg"></div><a href="index.htm">HOME</a><a href="lorem">HELP?</a><a href="References.html">REFERENCES</a><input type="text" placeholder="Search...">
-			</div>
+			<div style="float:left;">
+			<img href="Logo.jpg" style="width=60px;height:33px;" src="Logo.jpg"></div>
+			<a href="index.htm">HOME</a>
+			<a href="help.html">HELP?</a>
+			<a href="References.html">REFERENCES</a>
+			<!--<input type="text" placeholder="Search...">-->
+			<p onload="display();" style="float:right;" id="display">Hello ... Points: </p>
+		</div>
 			
 			<!--  Spacing -->
 			<div class="side-spacing" style="float:left;width:35%;"></div>
@@ -72,10 +78,10 @@
 			<div class="side-spacing" style="float:right; width:35%;"></div>
 			<!--  ############## LOGIN ################# -->
 			<div class=login>
-				<h1 style="text-align: center">Login<br></h1>
+				<h1 style="text-align:center">Login<br></h1>
 				<p style="padding-left:10%"><strong>Please select your name from the roll:</strong></p>
 				<div class="dropdown">
-					<button class="dropbtn">Dropdown</button>
+					<button class="dropbtn" style="margin:10% 50% 10% 30%;">Dropdown</button>
 					<div class="dropdown-content">
 						<a onclick="establish('Cameron Aitkens'); alert('myguy');">Cameron Aitkens</a>
 						<a onclick="establish('Omar Asim')">Omar Asim</a>
@@ -100,7 +106,7 @@
 						<a onclick="establish('Bejamin Turner')">Bejamin Turner</a>
 					</div>
 				</div>
-				<button style="margin:10% 50% 10% 10%; width:40%; background-color:'ffffff'; border:none;">Submit</button>
+				<button href="Learning.htm" style="margin:10% 50% 10% 30%; width:40%; background-color:'ffffff'; border:none;">Submit</button>
 			</div>
 			<!-- END LOGIN-->
 			<div class="bottom-spacing" style="width:30%;height:25%;"></div>
