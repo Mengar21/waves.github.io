@@ -2,7 +2,8 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>wavwav</title>
+<title>Quiz Game</title>
+<link rel="stylesheet" href="Indexcss.css" type="text/css">
 <style>
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
 
@@ -69,7 +70,17 @@ button:hover{
 </style>
 </head>
 <body>
-<h1>Quiz on Important Facts</h1>
+
+<div class="universal-topnav">
+	<div style="float:left;">
+	<img href="Logo.jpg" style="width=60px;height:33px;" src="Logo.jpg"></div>
+	<a href="index.htm">HOME</a>
+	<a href="help.html">HELP?</a>
+	<a href="References.html">REFERENCES</a>
+	<!--<input type="text" placeholder="Search...">-->
+	<p onload="display();" style="float:right;" id="display">Hello ... Points: </p>
+</div>
+<h1>Wave Quiz</h1>
 <div class="quiz-container">
   <div id="quiz"></div>
 </div>
@@ -79,7 +90,7 @@ button:hover{
 <div id="results"></div>
 <script>
 (function() {
-const myQuestions = [
+  const myQuestions = [
     {
       question: "Which is an Advantage of wave power?",
       answers: {
@@ -107,8 +118,8 @@ const myQuestions = [
         d: "4 cents"
       },
       correctAnswer: "d"
-    }/*,
-	{
+    },
+    {
       question: "Which is an disdvantage of wave power?",
       answers: {
         a: "Flammable chemicals slowly concentrate and accumulate in the machine",
@@ -174,13 +185,15 @@ const myQuestions = [
 		d: "where"
       },
       correctAnswer: "a"
-    }*/
+    },
   ];
 
   function buildQuiz() {
     const output = [];
+
     myQuestions.forEach((currentQuestion, questionNumber) => {
       const answers = [];
+
       for (letter in currentQuestion.answers) {
         answers.push(
           `<label>
@@ -190,47 +203,37 @@ const myQuestions = [
            </label>`
         );
       }
-	  
+
+      // add this question and its answers to the output
       output.push(
-        <div class="slide">
+        `<div class="slide">
            <div class="question"> ${currentQuestion.question} </div>
            <div class="answers"> ${answers.join("")} </div>
          </div>`
       );
     });
-
-    quizContainer.innerHTML = output.join("");
+	quizContainer.innerHTML = output.join("");
   }
 
   function showResults() {
     // gather answer containers from our quiz
     const answerContainers = quizContainer.querySelectorAll(".answers");
+	let numCorrect = 0;
 
-    // keep track of user's answers
-    let numCorrect = 0;
-
-    // for each question...
     myQuestions.forEach((currentQuestion, questionNumber) => {
-      // find selected answer
       const answerContainer = answerContainers[questionNumber];
       const selector = `input[name=question${questionNumber}]:checked`;
       const userAnswer = (answerContainer.querySelector(selector) || {}).value;
 
-      // if answer is correct
       if (userAnswer === currentQuestion.correctAnswer) {
-        // add to the number of correct answers
         numCorrect++;
-
-        // color the answers green
+		
         answerContainers[questionNumber].style.color = "lightgreen";
       } else {
-        // if answer is wrong or blank
-        // color the answers red
         answerContainers[questionNumber].style.color = "red";
       }
     });
 
-    // show number of correct answers out of total
     resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
   }
 
@@ -266,7 +269,6 @@ const myQuestions = [
   const resultsContainer = document.getElementById("results");
   const submitButton = document.getElementById("submit");
 
-  // display quiz right away
   buildQuiz();
 
   const previousButton = document.getElementById("previous");
@@ -276,151 +278,12 @@ const myQuestions = [
 
   showSlide(0);
 
-  // on submit, show results
   submitButton.addEventListener("click", showResults);
   previousButton.addEventListener("click", showPreviousSlide);
   nextButton.addEventListener("click", showNextSlide);
 })();
 </script>
+<br><br><br><br>
+<h1></h1>
 </body>
 </html>
-
-
-
-
-
-
-
-
-var questions = ["Are waves gay?",
-				 "Who is cool"];
-//C=checkBox, B = button, R = radio, T = text, E = end
-var answers = ['R', "Yes", "-No", 'T', "tadgh", 'E'];
-var title = document.getElementById("qstn");
-var form = document.getElementById("form").children;
-var correct = [];
-var qi = 0;
-var ai = 0;
-//get quizz working
-//for answer
-function nextQuestion(){
-	alert('1')	
-	var current
-	switch (answers[ai]) {//reward points here
-   	case 'C'://checkbox
-		
-		break;
-	case 'R'://radio
-		break;
-	case 'T'://textbox
-		
-		break;
-	default: 
-		alert("Errah")
-	}
-	
-	correct = [];
-	if (qi < questions.length) { qi++; } else { qi = 0; ai = 0}//question increment
-	title.innerHTML = questions[qi];//new title
-	
-	while (answers[ai].length != 1){ai++;}//get answer starting point	
-	
-	
-	for (i = 0; i < form.length; i++) {//clear
-		form[i].style.display = "none";
-	}
-	
-	document.getElementById(answer[ai]).style.display = "block";//show
-	
-	
-	switch (answers[ai]) {
-   	case 'C'://checkbox
-		//loop to find all corrects
-		for(ci = ai + 1; answers[ci].length > 1; ci++){
-			if(answers[ci][1] == '-'){
-				correct.push(ci-ai);
-			}
-		}
-		for(i = 0; i <= 4; i++){
-			document.getElementById('c' + i).innerHTML = answers[ai+i+1];//label cb btns
-		}
-		break;
-	case 'R'://radio
-		//loop to find the correct
-		var ri = ai;
-			
-		while (answers[ri][1] != '-'){ri++;}
-			correct.push(ri-ai);//clear this
-			//correst[0] = ri-ai
-			for(i = 0; i <= 4; i++){
-				document.getElementById('r' + i).innerHTML = answers[ai+i+1];//label radio btns
-			}
-		break;
-	case 'T':
-		break;
-	default: 
-		alert("Errah")
-	}
-	//filter length, char and number
-		//if radio then
-		//activate radio button
-		//find availible answers
-		//disable lowest radio button
-	//if checkbox then
-		// 
-	//if button then
-	//if text then
-}*/
-</script>
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-<h1 id="qstn">yeeti</h1>
-<div id="form">
-	<form id = "R">
-	<input type="radio" name="radio" id="r0" checked> firstbtn<br>
-  	<input type="radio" name="radio" id="r1"> 2btn<br>
-  	<input type="radio" name="radio" id="r2"> 3btn<br>
-	<input type="radio" name="radio" id="r3"> 4btn
-	</form>
-	<form>
-	<input type="checkbox" name="checkbox" id="c0"> 0 aye<br>
-	<input type="checkbox" name="checkbox" id="c1"> 1 aye<br>
-	<input type="checkbox" name="checkbox" id="c2"> 2 aye<br>
-	<input type="checkbox" name="checkbox" id="c3"> 3 aye
-	</form>
-	<form id>
-	<input type="text" id="text">
-	</form>
-</div>
-<input type="button" onclick="nextQuestion()" onload="nextQuestion()" value="Submit">	
-	
-	
-	
-<form>
-  First name:<br>
-  <input type="text" name="firstname"><br>
-  Last name:<br>
-  <input type="text" name="lastname">
-</form>
-	
-<form>
-  <input type="radio" name="gender" value="male" checked> Male<br>
-  <input type="radio" name="gender" value="female"> Female<br>
-  <input type="radio" name="gender" value="other"> Other
-</form>
-
-<input type="button" onclick="alert('Hello World!')" value="Click Me!">
-<form>
-  <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
-  <input type="checkbox" name="vehicle2" value="Car"> I have a car 
-</form>

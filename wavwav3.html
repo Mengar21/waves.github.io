@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Drag and Drop Game</title>
+<link rel="icon" href="Learning_Icon.png">
+<link rel="stylesheet" href="Indexcss.css" type="text/css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<script src="logon.js"></script>
+</head>
+<body>
+	
+<script>
+var names = ["Cameron Aitkens", "Omar Asim", "Ion Best", "Timothy Bryant", "Shivek Chaudhry", "Javier Cushing", "Jean-Pierre Du Toit", "Tadgh Gunter", "Samuel Kelly", "Rachel Kinsey", "Ashley Laughton", "Rohan Meagher", "Jeremiah Miletich", "Lachlan Nairn", "Angus Oakley", "Kai Sanli", "Thomas Separovich", "Rohan Smith", "Samuel Smith", "Benjamin Turner", "William Delves", "admin"];
+
+var words = document.getElementsByClassName("word");
+for(var i in words){
+   dragElement(words[i]);
+}
+//dragElement(document.getElementById("word"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+    elmnt.onmousedown = dragMouseDown;
+
+  function dragMouseDown(e) {
+    elmnt.style.position = "absolute";
+	elmnt.style.zIndex = 10;
+	e = e || window.event;
+    e.preventDefault();
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1 - 10) + "px";
+  }
+  
+  function closeDragElement() {
+    document.onmouseup = null;
+    document.onmousemove = null;
+	var space = document.getElementById(elmnt.childNodes[0].innerHTML);//p
+	if(elmnt.offsetTop > space.offsetTop - 30 && 
+	elmnt.offsetLeft > space.offsetLeft -120 && 
+	elmnt.offsetTop < space.offsetTop + 30 && 
+	elmnt.offsetLeft < space.offsetLeft + 120){
+		space.style.borderColor = "blue";
+		space.innerHTML = elmnt.innerHTML;
+		elmnt.parentNode.removeChild(elmnt);
+	}
+  }
+}
+</script>
+</body>
+</html>
