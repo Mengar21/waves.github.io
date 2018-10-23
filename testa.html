@@ -1,0 +1,43 @@
+<html>
+<body>
+
+<form action="exceldatabase.php" method="post">
+Name: <input type="text" name="name"><br>
+E-mail: <input type="text" name="email"><br>
+<input type="submit">
+</form>
+
+</body>
+</html>
+<!-- /*<?php/* 
+$email=$_POST['email'];
+$name=$_POST['name'];
+$data=$name.",".$email;
+
+
+$file="file.csv";
+
+
+file_put_contents($file, $data . PHP_EOL, FILE_APPEND);
+print "<h1 align=center>Thank you for submitting your email address!</h1>";
+
+
+*/
+
+$list = array
+(
+"Peter,Griffin,Oslo,Norway",
+"Glenn,Quagmire,Oslo,Norway",
+);
+
+$file = fopen("data.csv","w");
+
+foreach ($list as $line)
+  {
+  fputcsv($file,explode(',',$line));
+  }
+
+fclose($file);
+
+
+?>*/ -->

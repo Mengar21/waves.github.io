@@ -9,6 +9,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 <script src="logon.js"></script>
+<script>
+function establish(name){
+	//if name exists on spreadsheet
+	document.getElementsByClassName('dropbtn')[0].innerHTML = name;
+	Cookies.set('name', name, { expires: 1 });
+	Cookies.set('points', '0', { expires: 1 });	
+}
+</script>
 <style>
 /*sorry rohan ill chuck it in the css file later*/
 .dropbtn {
@@ -106,7 +114,17 @@
 						<a onclick="establish('Bejamin Turner')">Bejamin Turner</a>
 					</div>
 				</div>
-				<button href="Learning.htm" style="margin:10% 50% 10% 30%; width:40%; background-color:'ffffff'; border:none;">Submit</button>
+				<!-- <form action="exceldatabase.php" method="POST">
+					<select name="cars">
+						<option value="volvo">Volvo</option>
+						<option value="saab">Saab</option>
+						<option value="fiat">Fiat</option>
+						<option value="audi">Audi</option>
+					</select>
+					  <br><br>
+					  <input type="submit">
+				</form> -->
+				<button onclick="window.location.href='Learning.htm'" style="margin:10% 50% 10% 30%; width:40%; background-color:'ffffff'; border:none;">Submit</button>
 			</div>
 			<!-- END LOGIN-->
 			<div class="bottom-spacing" style="width:30%;height:25%;"></div>

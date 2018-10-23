@@ -21,13 +21,6 @@ function addPoints(name, points){
 	Cookies.set('points', points.toString(), { expires: 1 });	
 }
 
-function establish(name){
-	//if name exists on spreadsheet
-	document.getElementsByClassName("dropbtn").innerHTML = name;
-	Cookies.set('name', name, { expires: 1 });
-	Cookies.set('points', '0', { expires: 1 });	
-}
-
 function kill(){
 	//cookies.remove if need be
 }
